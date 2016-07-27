@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 滑动导航条item -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@color/transparent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center" >
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/icon_iv"
+            android:layout_gravity="center"
+            android:layout_width="14dp"
+            android:layout_height="14dp" />
+
+
+        <TextView
+            android:textSize="13sp"
+            android:id="@+id/tab_title"
+            style="@style/viewpage_slidingTabTitle"
+            android:paddingLeft="6dp"
+            android:paddingBottom="@dimen/dp10"
+            android:paddingTop="@dimen/dp10"
+            android:text="最新资讯" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tab_mes"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="13dp"
+        android:gravity="center"
+        android:visibility="visible" />
+
+</RelativeLayout>

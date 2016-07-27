@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:minHeight="@dimen/shenpi_layout_height"
+            android:paddingRight="@dimen/dp15">
+
+            <ImageView
+                android:layout_height="@dimen/dp25"
+                android:layout_width="@dimen/dp25"
+                android:layout_marginLeft="@dimen/dp15"
+                android:src="@drawable/icon_user_left" />
+
+            <TextView
+                android:id="@id/tv_shenpiren_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:text="第一审批人："
+                android:textColor="@color/color_task_layout_left_title"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@id/tv_shenpiren_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@id/tv_shenpiren_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_marginTop="10.0dip"
+                android:layout_weight="1.0"
+                android:gravity="right"
+                android:paddingRight="5.0dip"
+                android:text=""
+                android:textSize="12.0sp" />
+
+            <include
+                android:id="@id/img_shenpiren_jiantou"
+                layout="@layout/public_layout_jiantou"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:id="@id/middle_msg_shenpiren"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/oa_divider_color" />
+
+        <EditText
+            android:id="@id/edit_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="可输入审批意见（选填）"
+            android:paddingBottom="10.0dip"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip"
+            android:paddingTop="10.0dip"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/layout_info_op"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/shenpi_layout_height"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginTop="8.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@id/btn_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/bg_c_1cbe83_round_10"
+                android:minWidth="@dimen/dp60"
+                android:paddingBottom="@dimen/dp10"
+                android:paddingTop="@dimen/dp10"
+                android:text="同意"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@id/btn_refuse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/bg_c_d73232_round_10"
+                android:minWidth="@dimen/dp60"
+                android:paddingBottom="@dimen/dp10"
+                android:paddingTop="@dimen/dp10"
+                android:text="拒绝"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@id/btn_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/bg_c_7c7c7c_round_10_line"
+                android:minWidth="@dimen/dp60"
+                android:paddingBottom="@dimen/dp10"
+                android:paddingTop="@dimen/dp10"
+                android:text="其他操作"
+                android:textColor="@color/c_737373"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/oa_divider_color" />
+</LinearLayout>

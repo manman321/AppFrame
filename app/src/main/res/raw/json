@@ -1,0 +1,855 @@
+{
+  "id": "a6509c1b-f49f-47a6-829d-ec43b9210eb2",
+  "name": "请假申请",
+  "type": "48d05cf9-81c2-4713-87ab-1a45321500de",
+  "manager": "u_8086d01f-7ae3-402e-b543-d34f1059f79a,u_eb03262c-ab60-4bc6-a4c0-96e66a4229fe,u_23c3e9fc-6d8a-4ea0-925a-0a0671d61378",
+  "instanceManager": "u_8086d01f-7ae3-402e-b543-d34f1059f79a,u_eb03262c-ab60-4bc6-a4c0-96e66a4229fe,u_23c3e9fc-6d8a-4ea0-925a-0a0671d61378",
+  "removeCompleted": "0",
+  "debug": "0",
+  "debugUsers": "u_eb03262c-ab60-4bc6-a4c0-96e66a4229fe",
+  "note": "",
+  "databases": [
+    {
+      "link": "06075250-30dc-4d32-bf97-e922cb30fac8",
+      "linkName": "平台连接",
+      "table": "TempTest",
+      "primaryKey": "ID"
+    }
+  ],
+  "titleField": {
+    "link": "06075250-30dc-4d32-bf97-e922cb30fac8",
+    "table": "TempTest",
+    "field": "flowcompleted"
+  },
+  "steps": [
+    {
+      "id": "6421e3b1-a2bc-4418-b6d8-d38b4456bc9e",
+      "name": "填写请假单",
+      "opinionDisplay": "1",
+      "expiredPrompt": "1",
+      "signatureType": "0",
+      "workTime": "",
+      "limitTime": "",
+      "otherTime": "",
+      "archives": "0",
+      "archivesParams": "",
+      "note": "",
+      "position": {
+        "x": 173,
+        "y": 114,
+        "width": 108,
+        "height": 50
+      },
+      "behavior": {
+        "flowType": "1",
+        "runSelect": "0",
+        "handlerType": "0",
+        "selectRange": "",
+        "handlerStep": "",
+        "valueField": "",
+        "defaultHandler": "",
+        "hanlderModel": "0",
+        "backModel": "0",
+        "backType": "0",
+        "backStep": "",
+        "percentage": ""
+      },
+      "forms": [
+        {
+          "id": "b8a7bca3-9a32-45eb-b685-1e8c05c78bd3",
+          "name": "",
+          "type": "719c6c30-3d6a-44e2-8730-637c651f1df7",
+          "srot": 0
+        }
+      ],
+      "buttons": [
+        {
+          "id": "3b271f67-0433-4082-ad1a-8df1b967b879",
+          "sort": 0
+        },
+        {
+          "id": "da7c699c-3c55-4657-8781-6881ac9117b7",
+          "sort": 1
+        },
+        {
+          "id": "other_splitline",
+          "sort": 2
+        },
+        {
+          "id": "8982b97c-adba-4a3a-afd9-9a3ef6ff12d8",
+          "sort": 3
+        }
+      ],
+      "fieldStatus": [
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.ID",
+          "status": "0",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Title",
+          "status": "0",
+          "check": "2"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.UserID",
+          "status": "0",
+          "check": "2"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.UserName",
+          "status": "0",
+          "check": "2"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.DeptID",
+          "status": "0",
+          "check": "2"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.DeptName",
+          "status": "0",
+          "check": "2"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Date1",
+          "status": "0",
+          "check": "2"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Date2",
+          "status": "0",
+          "check": "2"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Type",
+          "status": "0",
+          "check": "2"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Reason",
+          "status": "0",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.WriteTime",
+          "status": "0",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Days",
+          "status": "0",
+          "check": "2"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.test",
+          "status": "0",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.test1",
+          "status": "0",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.test2",
+          "status": "0",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.test3",
+          "status": "0",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.flowcompleted",
+          "status": "0",
+          "check": "0"
+        }
+      ],
+      "event": {
+        "submitBefore": "",
+        "submitAfter": "",
+        "backBefore": "",
+        "backAfter": ""
+      }
+    },
+    {
+      "id": "ce0c165a-778b-4817-a9c5-21f862f1c96e",
+      "name": "领导审批",
+      "opinionDisplay": "1",
+      "expiredPrompt": "1",
+      "signatureType": "2",
+      "workTime": "2.5",
+      "limitTime": "",
+      "otherTime": "",
+      "archives": "0",
+      "archivesParams": "",
+      "note": "",
+      "position": {
+        "x": 492,
+        "y": 28,
+        "width": 114,
+        "height": 54
+      },
+      "behavior": {
+        "flowType": "0",
+        "runSelect": "1",
+        "handlerType": "4",
+        "selectRange": "04f12beb-d99d-43df-ac9a-3042957d6bda",
+        "handlerStep": "",
+        "valueField": "",
+        "defaultHandler": "u_8086d01f-7ae3-402e-b543-d34f1059f79a",
+        "hanlderModel": "0",
+        "backModel": "1",
+        "backType": "0",
+        "backStep": "",
+        "percentage": ""
+      },
+      "forms": [
+        {
+          "id": "b8a7bca3-9a32-45eb-b685-1e8c05c78bd3",
+          "name": "",
+          "type": "2a1070f6-af14-45b3-8292-fe0962701c04",
+          "srot": 0
+        }
+      ],
+      "buttons": [
+        {
+          "id": "3b271f67-0433-4082-ad1a-8df1b967b879",
+          "sort": 0
+        },
+        {
+          "id": "other_splitline",
+          "sort": 1
+        },
+        {
+          "id": "86b7fa6c-891f-4565-9309-81672d3ba80a",
+          "sort": 2
+        },
+        {
+          "id": "8982b97c-adba-4a3a-afd9-9a3ef6ff12d8",
+          "sort": 3
+        }
+      ],
+      "fieldStatus": [
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.ID",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Title",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.UserID",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.UserName",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.DeptID",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.DeptName",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Date1",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Date2",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Type",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Reason",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.WriteTime",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Days",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.test",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.test1",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.test2",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.test3",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.flowcompleted",
+          "status": "0",
+          "check": "0"
+        }
+      ],
+      "event": {
+        "submitBefore": "",
+        "submitAfter": "",
+        "backBefore": "",
+        "backAfter": ""
+      }
+    },
+    {
+      "id": "fabd66d0-e260-4a4b-b774-3302a1617cc5",
+      "name": "部门主管审批",
+      "opinionDisplay": "1",
+      "expiredPrompt": "1",
+      "signatureType": "1",
+      "workTime": "",
+      "limitTime": "",
+      "otherTime": "",
+      "archives": "0",
+      "archivesParams": "",
+      "note": "请假天数大于3天由人事部经理审批，大于5天由领导审批。",
+      "position": {
+        "x": 322,
+        "y": 114,
+        "width": 108,
+        "height": 50
+      },
+      "behavior": {
+        "flowType": "0",
+        "runSelect": "1",
+        "handlerType": "9",
+        "selectRange": "",
+        "handlerStep": "",
+        "valueField": "",
+        "defaultHandler": "",
+        "hanlderModel": "0",
+        "backModel": "1",
+        "backType": "0",
+        "backStep": "",
+        "percentage": ""
+      },
+      "forms": [
+        {
+          "id": "b8a7bca3-9a32-45eb-b685-1e8c05c78bd3",
+          "name": "",
+          "type": "2a1070f6-af14-45b3-8292-fe0962701c04",
+          "srot": 0
+        }
+      ],
+      "buttons": [
+        {
+          "id": "b8a7af17-7ad5-4699-b679-d421691dd737",
+          "sort": 0
+        },
+        {
+          "id": "other_splitline",
+          "sort": 1
+        },
+        {
+          "id": "29b358e1-ad64-4f09-846c-4554ae6b85c4",
+          "sort": 2
+        },
+        {
+          "id": "3b271f67-0433-4082-ad1a-8df1b967b879",
+          "sort": 3
+        },
+        {
+          "id": "86b7fa6c-891f-4565-9309-81672d3ba80a",
+          "sort": 4
+        },
+        {
+          "id": "8982b97c-adba-4a3a-afd9-9a3ef6ff12d8",
+          "sort": 5
+        }
+      ],
+      "fieldStatus": [
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.ID",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Title",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.UserID",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.UserName",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.DeptID",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.DeptName",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Date1",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Date2",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Type",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Reason",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.WriteTime",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Days",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.test",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.test1",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.test2",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.test3",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.flowcompleted",
+          "status": "1",
+          "check": "0"
+        }
+      ],
+      "event": {
+        "submitBefore": "",
+        "submitAfter": "",
+        "backBefore": "",
+        "backAfter": ""
+      }
+    },
+    {
+      "id": "93536eaf-2ea1-4a29-9d88-8bad1927a96e",
+      "name": "反馈发起人",
+      "opinionDisplay": "1",
+      "expiredPrompt": "1",
+      "signatureType": "0",
+      "workTime": "",
+      "limitTime": "",
+      "otherTime": "",
+      "archives": "1",
+      "archivesParams": "",
+      "note": "",
+      "position": {
+        "x": 585,
+        "y": 114,
+        "width": 114,
+        "height": 54
+      },
+      "behavior": {
+        "flowType": "0",
+        "runSelect": "0",
+        "handlerType": "5",
+        "selectRange": "",
+        "handlerStep": "",
+        "valueField": "",
+        "defaultHandler": "",
+        "hanlderModel": "3",
+        "backModel": "1",
+        "backType": "0",
+        "backStep": "",
+        "percentage": ""
+      },
+      "forms": [
+        {
+          "id": "b8a7bca3-9a32-45eb-b685-1e8c05c78bd3",
+          "name": "",
+          "type": "2a1070f6-af14-45b3-8292-fe0962701c04",
+          "srot": 0
+        }
+      ],
+      "buttons": [
+        {
+          "id": "b8a7af17-7ad5-4699-b679-d421691dd737",
+          "sort": 0
+        },
+        {
+          "id": "29b358e1-ad64-4f09-846c-4554ae6b85c4",
+          "sort": 1
+        },
+        {
+          "id": "other_splitline",
+          "sort": 2
+        },
+        {
+          "id": "3b271f67-0433-4082-ad1a-8df1b967b879",
+          "sort": 3
+        },
+        {
+          "id": "86b7fa6c-891f-4565-9309-81672d3ba80a",
+          "sort": 4
+        },
+        {
+          "id": "954effa8-03b8-461a-aaa8-8727d090dcb9",
+          "sort": 5
+        }
+      ],
+      "fieldStatus": [
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.ID",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Title",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.UserID",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.UserName",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.DeptID",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.DeptName",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Date1",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Date2",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Type",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Reason",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.WriteTime",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Days",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.test",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.test1",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.test2",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.test3",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.flowcompleted",
+          "status": "1",
+          "check": "0"
+        }
+      ],
+      "event": {
+        "submitBefore": "",
+        "submitAfter": "",
+        "backBefore": "",
+        "backAfter": ""
+      }
+    },
+    {
+      "id": "baac846e-4ee2-44ee-b684-8cedb39578bb",
+      "name": "人事部经理审批",
+      "opinionDisplay": "1",
+      "expiredPrompt": "1",
+      "signatureType": "2",
+      "workTime": "",
+      "limitTime": "",
+      "otherTime": "",
+      "archives": "0",
+      "archivesParams": "",
+      "note": "",
+      "position": {
+        "x": 494,
+        "y": 193,
+        "width": 114,
+        "height": 54
+      },
+      "behavior": {
+        "flowType": "0",
+        "runSelect": "1",
+        "handlerType": "0",
+        "selectRange": "",
+        "handlerStep": "",
+        "valueField": "",
+        "defaultHandler": "u_1acf9c22-bfb6-4673-a698-a58233747b92",
+        "hanlderModel": "0",
+        "backModel": "1",
+        "backType": "0",
+        "backStep": "",
+        "percentage": ""
+      },
+      "forms": [
+        {
+          "id": "b8a7bca3-9a32-45eb-b685-1e8c05c78bd3",
+          "name": "",
+          "type": "2a1070f6-af14-45b3-8292-fe0962701c04",
+          "srot": 0
+        }
+      ],
+      "buttons": [
+        {
+          "id": "b8a7af17-7ad5-4699-b679-d421691dd737",
+          "sort": 0
+        },
+        {
+          "id": "other_splitline",
+          "sort": 1
+        },
+        {
+          "id": "da7c699c-3c55-4657-8781-6881ac9117b7",
+          "sort": 2
+        },
+        {
+          "id": "86b7fa6c-891f-4565-9309-81672d3ba80a",
+          "sort": 3
+        },
+        {
+          "id": "8982b97c-adba-4a3a-afd9-9a3ef6ff12d8",
+          "sort": 4
+        }
+      ],
+      "fieldStatus": [
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.ID",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Title",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.UserID",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.UserName",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.DeptID",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.DeptName",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Date1",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Date2",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Type",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Reason",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.WriteTime",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.Days",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.test",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.test1",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.test2",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.test3",
+          "status": "1",
+          "check": "0"
+        },
+        {
+          "field": "06075250-30dc-4d32-bf97-e922cb30fac8.TempTest.flowcompleted",
+          "status": "1",
+          "check": "0"
+        }
+      ],
+      "event": {
+        "submitBefore": "",
+        "submitAfter": "",
+        "backBefore": "",
+        "backAfter": ""
+      }
+    }
+  ],
+  "lines": [
+    {
+      "id": "028177ab-ffe6-4e33-b210-6aeb94f3a0fd",
+      "from": "6421e3b1-a2bc-4418-b6d8-d38b4456bc9e",
+      "to": "fabd66d0-e260-4a4b-b774-3302a1617cc5",
+      "customMethod": "",
+      "noaccordMsg": "",
+      "sql": ""
+    },
+    {
+      "id": "a1346972-fa3b-4133-8730-142de051d5c2",
+      "from": "fabd66d0-e260-4a4b-b774-3302a1617cc5",
+      "to": "93536eaf-2ea1-4a29-9d88-8bad1927a96e",
+      "customMethod": "",
+      "sql": "Days<=3"
+    },
+    {
+      "id": "dba640aa-6016-405e-8417-11b2ec1abeb4",
+      "from": "fabd66d0-e260-4a4b-b774-3302a1617cc5",
+      "to": "ce0c165a-778b-4817-a9c5-21f862f1c96e",
+      "customMethod": "",
+      "noaccordMsg": "",
+      "sql": "Days>5"
+    },
+    {
+      "id": "8819d082-8a8c-4d4e-b7c9-6752eff8ec2a",
+      "from": "ce0c165a-778b-4817-a9c5-21f862f1c96e",
+      "to": "93536eaf-2ea1-4a29-9d88-8bad1927a96e",
+      "customMethod": "",
+      "sql": "",
+      "noaccordMsg": ""
+    },
+    {
+      "id": "1a7746f0-3a3d-4937-8e3a-65fe0646bff8",
+      "from": "fabd66d0-e260-4a4b-b774-3302a1617cc5",
+      "to": "baac846e-4ee2-44ee-b684-8cedb39578bb",
+      "customMethod": "",
+      "noaccordMsg": "",
+      "sql": "Days>3 AND Days<=5"
+    },
+    {
+      "id": "3e639661-e46c-4041-b3ba-3d1d63212b67",
+      "from": "baac846e-4ee2-44ee-b684-8cedb39578bb",
+      "to": "93536eaf-2ea1-4a29-9d88-8bad1927a96e",
+      "customMethod": "",
+      "sql": "",
+      "noaccordMsg": ""
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/main_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/writeEmail"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_email_write"
+            android:layout_width="26dp"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="写邮件"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/receiverEmail"
+        android:layout_marginTop="2px"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_email_receive"
+            android:layout_width="26dp"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="收件箱"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sendEmail"
+        android:layout_marginTop="2px"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_email_send"
+            android:layout_width="26dp"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="发件箱"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/draftEmail"
+        android:layout_marginTop="2px"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_email_draft"
+            android:layout_width="26dp"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="草稿箱"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

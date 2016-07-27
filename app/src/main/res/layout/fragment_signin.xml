@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/main_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/mapViewLL"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dp16"
+
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16"
+        android:paddingTop="@dimen/dp8"
+        android:paddingBottom="@dimen/dp8"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/mapView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/dp8"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/cityTv"
+                android:textColor="@color/black"
+                tools:text="市地址"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+
+
+            <TextView
+                android:textColor="@color/main_color"
+                android:layout_marginBottom="4dp"
+                android:layout_gravity="bottom"
+                android:text="点击地图微调地址>>"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_marginTop="@dimen/dp16"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16"
+        android:paddingTop="@dimen/dp8"
+        android:paddingBottom="@dimen/dp8"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:gravity="top"
+        android:id="@+id/descriptionEt"
+        android:hint="签到说明"
+        android:minHeight="120dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+</LinearLayout>

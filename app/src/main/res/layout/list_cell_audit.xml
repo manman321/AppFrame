@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/dp8"
+    android:paddingBottom="@dimen/dp8"
+    android:paddingLeft="@dimen/dp16"
+    android:paddingRight="@dimen/dp16"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <CheckBox
+        android:visibility="gone"
+        android:button="@null"
+        android:background="@drawable/icon_checkbox_selecter"
+        android:layout_marginRight="6dp"
+        android:id="@+id/checkbox"
+        android:layout_gravity="center_vertical"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            tools:src="@drawable/icon_photo_default"
+            android:id="@+id/photoIv"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/nameTv"
+            tools:text="名字"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/auditTv"
+                tools:text="张三"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:id="@+id/typeTv"
+                tools:text="[张三]"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            tools:text="2016-12-11 22:12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <ImageView
+            android:id="@+id/statusIv"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/delIv"
+        android:background="@drawable/oa_del_pic"
+        android:layout_marginLeft="6dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="26dp"
+        android:layout_height="26dp" />
+
+
+
+
+
+
+
+
+</LinearLayout>

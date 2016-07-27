@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/c_f4f4f4"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rly_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@id/rly_viewholder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp55">
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/main_tab"
+            android:weightSum="5"
+            android:background="@drawable/bg_mainbottom_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/oa_main_bottom_height"
+            android:layout_alignParentBottom="true">
+
+            <com.wlht.oa.widget.TabItem
+                android:id="@+id/home"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <com.wlht.oa.widget.TabItem
+                android:id="@+id/message"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <RelativeLayout android:gravity="center"
+                android:id="@id/main_rly_add"
+                android:visibility="visible"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0">
+                <ImageView android:id="@id/main_add"
+                    android:padding="@dimen/dp5"
+                    android:layout_width="@dimen/oa_main_bottom_height"
+                    android:layout_height="@dimen/oa_main_bottom_height"
+                    android:layout_marginTop="@dimen/dp0"
+                    android:src="@drawable/main_add_bg_normal"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <com.wlht.oa.widget.TabItem
+                android:id="@+id/contract"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <com.wlht.oa.widget.TabItem
+                android:id="@+id/me"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    </FrameLayout>
+
+</FrameLayout>

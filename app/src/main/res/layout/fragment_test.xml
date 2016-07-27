@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.wlht.oa.widget.FlowView
+            android:id="@+id/flowView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.wlht.oa.widget.FlowView>
+
+    </HorizontalScrollView>
+
+
+
+    <in.srain.cube.views.ptr.PtrFrameLayout
+        android:id="@+id/ptr_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="1000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.3"
+        cube_ptr:ptr_mode="both"
+        >
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:gravity="center"
+                android:text="haha"
+                android:textColor="@color/white"
+                android:background="@color/blue_light"
+                android:layout_width="match_parent"
+                android:layout_height="90dp" />
+
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+                <com.wlht.oa.widget.HScrollView
+                    android:id="@+id/horizontalScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="44dp">
+                            <TextView
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:text="1"
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent" />
+                            <TextView
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:text="1"
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent" />
+                            <TextView
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:text="1"
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="44dp">
+                            <TextView
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:text="2"
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent" />
+                            <TextView
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:text="1"
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent" />
+                            <TextView
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:text="1"
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="44dp">
+                            <TextView
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:text="3"
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent" />
+                            <TextView
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:text="1"
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent" />
+                            <TextView
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:text="1"
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="44dp">
+                            <TextView
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:text="4"
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent" />
+                            <TextView
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:text="1"
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent" />
+                            <TextView
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:text="1"
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+
+                        <com.wlht.oa.widget.InfoViewRow
+                            android:id="@+id/infoViewRow"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"/>
+
+                        <com.wlht.oa.widget.InfoViewRow
+                            android:id="@+id/infoViewRow2"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"/>
+
+                    </LinearLayout>
+
+                </com.wlht.oa.widget.HScrollView>
+
+
+            </ScrollView>
+
+
+
+            <!--<HorizontalScrollView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"/>
+            <!--</HorizontalScrollView>-->
+
+
+
+        </LinearLayout>
+
+
+
+
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+
+
+
+
+
+
+
+</LinearLayout>

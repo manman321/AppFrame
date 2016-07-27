@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginBottom="@dimen/dp47"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/formFields"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/formDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/main_bg_color"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp6"
+                    android:text="表单明细"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+                <com.wlht.oa.widget.HScrollView
+                    android:id="@+id/scrollView"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/formDetailsView"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </LinearLayout>
+                </com.wlht.oa.widget.HScrollView>
+
+
+                <LinearLayout
+                    android:id="@+id/formOptions"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/shenpi_layout_height"
+                    android:layout_marginTop="2px"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/formOptionsAdd"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp22"
+                            android:layout_height="@dimen/dp22"
+                            android:src="@drawable/renwu_cjmbicn" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:paddingBottom="5.0dip"
+                            android:paddingLeft="10.0dip"
+                            android:paddingRight="5.0dip"
+                            android:paddingTop="5.0dip"
+                            android:text="添加项"
+                            android:textColor="@color/c_737373"
+                            android:textSize="16.0sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="10.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:background="@color/oa_divider_color" />
+
+                    <LinearLayout
+                        android:id="@+id/formOptionsDel"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp22"
+                            android:layout_height="@dimen/dp22"
+                            android:src="@drawable/renwu_choiceicn_del" />
+
+                        <TextView
+                            android:id="@+id/formOptionsDelTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:clickable="false"
+                            android:paddingBottom="5.0dip"
+                            android:paddingLeft="10.0dip"
+                            android:paddingRight="5.0dip"
+                            android:paddingTop="5.0dip"
+                            android:text="删除项"
+                            android:textColor="@color/c_737373"
+                            android:textSize="16.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/attachLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/modulelink_layout_datashow"/>
+
+            </LinearLayout>
+
+
+            <HorizontalScrollView
+                android:layout_marginTop="@dimen/dp6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.wlht.oa.widget.FlowView
+                    android:background="@color/white"
+                    android:id="@+id/flowView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </com.wlht.oa.widget.FlowView>
+            </HorizontalScrollView>
+
+
+            <TextView
+
+                android:id="@+id/descriptionTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp6"
+                android:background="@color/white"
+                android:minHeight="50dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="@dimen/dp16"
+                android:paddingRight="@dimen/dp16"
+                android:paddingTop="6dp"
+                android:text="单据说明"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.wlht.oa.widget.ModuleLinkAddView
+        android:layout_gravity="bottom"
+        android:id="@+id/moduleLinkAddView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</FrameLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">物联海天OA</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="error_view_click_to_refresh">点击屏幕,重新加载</string>
+    <string name="error_view_no_data">暂无内容</string>
+    <string name="error_view_loading">加载中…</string>
+    <string name="error_view_load_error_click_to_refresh">内容加载失败\r\n点击重新加载</string>
+    <string name="error_view_network_error_click_to_refresh">没有可用的网络</string>
+    <string name="tip_network_error">没有可用的网络</string>
+
+
+    <string name="from_web">网页</string>
+    <string name="from_mobile">手机</string>
+    <string name="from_android">Android</string>
+    <string name="from_iphone">iPhone</string>
+    <string name="from_windows_phone">Windows Phone</string>
+    <string name="from_wechat">微信</string>
+    <string name="copy_success">复制成功</string>
+    <string name="down_state">正在下载：%s</string>
+    <string name="invalid_date">选择的日期必须在 %1$s 到 %2$s 之间.</string>
+
+
+</resources>

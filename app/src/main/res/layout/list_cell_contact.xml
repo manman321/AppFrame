@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--<com.wlht.oa2.widget.SwipeItemLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/swipe"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="86dp"-->
+    <!-->-->
+
+    <com.daimajia.swipe.SwipeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:swip="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swipe"
+        swip:clickToClose="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <!--swipe:leftEdgeSwipeOffset="0dp"-->
+    <!--swipe:rightEdgeSwipeOffset="0dp"-->
+
+    <LinearLayout
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="left"
+        android:tag="Bottom3"
+        android:weightSum="10">
+        <FrameLayout
+            android:background="@color/c_1cbe83"
+            android:layout_width="80dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/trash"
+                android:src="@drawable/trash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout
+            android:background="@color/b0b0b0"
+            android:layout_width="80dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/msg"
+                android:src="@drawable/trash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+   <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="86dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_margin="8dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                tools:text="姓名"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:id="@+id/name"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:textColor="@color/black"
+                tools:text="部门/职务"
+                android:gravity="center_vertical"
+                android:id="@+id/description"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</com.daimajia.swipe.SwipeLayout>

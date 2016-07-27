@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/dp16"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <View
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+
+    <TextView
+        android:id="@+id/logout"
+        android:textSize="14sp"
+        android:layout_margin="@dimen/dp16"
+        android:text="退出登录"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/subscribe_item_selected_stroke"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height" />
+
+
+</LinearLayout>

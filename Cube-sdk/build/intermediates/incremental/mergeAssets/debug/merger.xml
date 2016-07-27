@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/hr/project/AppFrame/Cube-sdk/assets"/></dataSet><dataSet config="debug"><source path="/Users/hr/project/AppFrame/Cube-sdk/src/debug/assets"/></dataSet></merger>

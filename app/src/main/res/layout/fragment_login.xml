@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/main_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp16"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50">
+
+            <!--<ImageView-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:src="@android:drawable/ic_partial_secure"-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="20dp" />-->
+
+            <com.wlht.oa.widget.ClearEditText
+                android:id="@+id/account"
+                android:textSize="13sp"
+                android:hint="请输入您的账号"
+                android:background="@color/transparent"
+                android:layout_marginLeft="@dimen/dp28"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <View
+            android:background="@color/main_bg_color"
+            android:layout_width="match_parent"
+            android:layout_height="2px"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@android:drawable/ic_lock_lock"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+
+            <com.wlht.oa.widget.PasswordEditText
+                android:id="@+id/password"
+                android:textSize="13sp"
+                android:hint="请输入6~20位密码"
+                android:background="@color/transparent"
+                android:layout_marginLeft="@dimen/dp28"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/login"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:text="登录"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height" />
+
+
+</LinearLayout>

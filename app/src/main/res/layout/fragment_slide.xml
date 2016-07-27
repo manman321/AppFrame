@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:background="@color/danblue"
+        android:orientation="horizontal"
+        android:layout_width="@dimen/dp150"
+        android:layout_height="match_parent">
+    </LinearLayout>
+
+
+
+
+    <com.wlht.oa.widget.SlideLayout
+        android:id="@+id/content"
+        android:background="@color/B3B3B3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="20dp"
+                android:text="123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n123asdfqpeuirwoqtyruwhfjksafdsa\n"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </ScrollView>
+
+
+    </com.wlht.oa.widget.SlideLayout>
+
+
+</FrameLayout>

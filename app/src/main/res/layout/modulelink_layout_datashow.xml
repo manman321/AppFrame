@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical"
+        android:background="@color/c_E6E6E6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout android:layout_marginTop="1px" android:orientation="vertical" android:id="@id/layout_info_file" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/dp15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/dp18" android:layout_height="@dimen/dp18" android:src="@drawable/mkgl_icon_xiangqing_fj" />
+                <TextView android:textSize="@dimen/dp14" android:textColor="@color/c_666666" android:paddingLeft="@dimen/dp5" android:paddingTop="@dimen/dp10" android:paddingBottom="@dimen/dp10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="附件" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_modulelink_checkin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/dp15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/dp18" android:layout_height="@dimen/dp18" android:src="@drawable/mkgl_icon_xiangqing_qd" />
+                <TextView android:textSize="@dimen/dp14" android:textColor="@color/c_666666" android:paddingLeft="@dimen/dp5" android:paddingTop="@dimen/dp10" android:paddingBottom="@dimen/dp10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="关联签到" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_marginTop="1px" android:orientation="vertical" android:id="@id/layout_modulelink_task" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/dp15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/dp18" android:layout_height="@dimen/dp18" android:src="@drawable/mkgl_icon_xiangqing_rw" />
+                <TextView android:textSize="@dimen/dp14" android:textColor="@color/c_666666" android:paddingLeft="@dimen/dp5" android:paddingTop="@dimen/dp10" android:paddingBottom="@dimen/dp10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="关联任务" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout  android:layout_marginTop="1px"  android:orientation="vertical" android:id="@id/layout_modulelink_approve" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/dp15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/dp18" android:layout_height="@dimen/dp18" android:src="@drawable/mkgl_icon_xiangqing_sp" />
+                <TextView android:textSize="@dimen/dp14" android:textColor="@color/c_666666" android:paddingLeft="@dimen/dp5" android:paddingTop="@dimen/dp10" android:paddingBottom="@dimen/dp10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="关联审批" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_modulelink_customer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/dp15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/dp18" android:layout_height="@dimen/dp18" android:src="@drawable/mkgl_icon_xiangqing_kh" />
+                <TextView android:textSize="@dimen/dp14" android:textColor="@color/c_666666" android:paddingLeft="@dimen/dp5" android:paddingTop="@dimen/dp10" android:paddingBottom="@dimen/dp10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="关联客户" />
+            </LinearLayout>
+            <include layout="@layout/public_layout_line" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_modulelink_customer_add" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <include layout="@layout/public_layout_line" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_modulelink_contact" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/dp15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/dp18" android:layout_height="@dimen/dp18" android:src="@drawable/mkgl_icon_xiangqing_lxr" />
+                <TextView android:textSize="@dimen/dp14" android:textColor="@color/c_666666" android:paddingLeft="@dimen/dp5" android:paddingTop="@dimen/dp10" android:paddingBottom="@dimen/dp10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="关联联系人" />
+            </LinearLayout>
+            <include layout="@layout/public_layout_line" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_modulelink_contact_add" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <include layout="@layout/public_layout_line" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_modulelink_doc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/dp15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/dp18" android:layout_height="@dimen/dp18" android:src="@drawable/mkgl_icon_xiangqing_wd" />
+                <TextView android:textSize="@dimen/dp14" android:textColor="@color/c_666666" android:paddingLeft="@dimen/dp5" android:paddingTop="@dimen/dp10" android:paddingBottom="@dimen/dp10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="引用文档" />
+            </LinearLayout>
+            <include layout="@layout/public_layout_line" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_modulelink_doc_add" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <include layout="@layout/public_layout_line" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

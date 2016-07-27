@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@id/task_tv_top_type"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/oa_task_top_height_dip"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/oa_transparent_1a"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/oa_task_magrin_left_dip"
+        android:text="指派我的"
+        android:textColor="@color/oa_item_task_content"
+        android:textSize="@dimen/oa_task_top_size_sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@id/task_rly_member_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_tv_top_type"
+        android:background="@drawable/oa_selecter_white_blue"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingRight="@dimen/dp15">
+
+        <ImageView
+            android:id="@id/task_iv_icon"
+            android:layout_width="@dimen/dp45"
+            android:layout_height="@dimen/dp45"
+            android:layout_marginTop="@dimen/dp12.5" />
+
+        <TextView
+            android:id="@id/task_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/task_iv_icon"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_toRightOf="@id/task_iv_icon"
+            android:ellipsize="end"
+            android:maxEms="8"
+            android:singleLine="true"
+            android:text="姓名"
+            android:textColor="@color/c_3b3b3b"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@id/task_tv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/task_tv_name"
+            android:layout_marginLeft="6.0dip"
+            android:layout_toRightOf="@id/task_tv_name"
+            android:drawableLeft="@drawable/oa_has_error"
+            android:text="experience"
+            android:textColor="@color/red"
+            android:textSize="@dimen/sp_14"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@id/task_tv_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/task_iv_icon"
+            android:layout_below="@id/task_iv_icon"
+            android:layout_marginBottom="@dimen/dp10"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="@dimen/dp5"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="今天很开心"
+            android:textColor="@color/c_666666"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@id/task_tv_stuts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/task_tv_name"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_toRightOf="@id/task_tv_name"
+            android:ellipsize="end"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:text="请假申请单"
+            android:textColor="@color/c_787878"
+            android:textSize="@dimen/sp_13" />
+
+        <TextView
+            android:id="@id/task_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/task_tv_name"
+            android:layout_below="@id/task_tv_name"
+            android:layout_marginTop="@dimen/dp5"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="刚刚"
+            android:textColor="@color/c_ababab"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@id/task_tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/task_tv_stuts"
+            android:layout_toRightOf="@id/task_tv_stuts"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="(ID:)"
+            android:textColor="@color/c_ababab"
+            android:textSize="@dimen/oa_task_type_sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@id/img_approve_state"
+            android:layout_width="@dimen/dp54"
+            android:layout_height="@dimen/dp54"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp12.5"
+            android:src="@drawable/sp_icon_stamp_dwp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/task_tv_load_more"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/oa_task_bottom_height_dip"
+        android:layout_below="@id/task_rly_member_info"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/oa_selecter_transparent_gran"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="查看更多..."
+        android:textColor="@color/white"
+        android:textSize="@dimen/oa_task_top_size_sp"
+        android:visibility="gone" />
+</LinearLayout>

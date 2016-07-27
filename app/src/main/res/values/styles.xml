@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="main_tab_bottom">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/main_tab_session_selecter</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:paddingTop">@dimen/dp2</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="main_tab_contact" parent="@style/main_tab_bottom">
+        <item name="android:drawableTop">@drawable/main_tab_contact_icon_selecter</item>
+    </style>
+
+    <style name="main_tab_find" parent="@style/main_tab_bottom">
+        <item name="android:drawableTop">@drawable/main_tab_my_icon_selecter</item>
+    </style>
+
+    <style name="main_tab_msg" parent="@style/main_tab_bottom">
+        <item name="android:drawableTop">@drawable/main_tab_msg_icon_selecter</item>
+    </style>
+
+    <!--<style name="main_tab_msg_red" parent="@style/main_tab_bottom">-->
+        <!--<item name="android:drawableTop">@drawable/main_tab_msg_red_icon_selecter</item>-->
+    <!--</style>-->
+
+    <!--<style name="main_tab_my" parent="@style/main_tab_bottom">-->
+        <!--<item name="android:drawableTop">@drawable/main_tab_my_icon_today</item>-->
+    <!--</style>-->
+
+
+    <!-- 加载滚动条样式 -->
+    <style name="loading">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateDrawable">@drawable/loading</item>
+        <item name="android:indeterminateDuration">1000</item>
+        <item name="android:indeterminateOnly">true</item>
+    </style>
+
+    <!-- viewpage文本  滑动标签标题 -->
+    <style name="viewpage_slidingTabTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/viewpage_selector_slide_title</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/main_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+
+
+
+    <View
+        android:layout_marginTop="46dp"
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"/>
+
+    <FrameLayout
+        android:layout_marginTop="276dp"
+        android:transitionName="bar"
+        android:id="@+id/breakfastFL"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height">
+
+        <TextView
+            android:gravity="center"
+            android:text="未预约"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/icon_meal_breakfast_normal"
+                android:layout_gravity="center_vertical"
+                android:layout_width="26dp"
+                android:layout_height="26dp" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/dp8"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="早餐"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+</FrameLayout>
